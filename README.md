@@ -13,7 +13,10 @@ Used to reference the python library for easy Twitter API Auth and function call
 ```$pip install python-decouple```
 Used to reference API keys from the .env file. ```.env``` can be altered to get your own .env file up and running!
 `NOTE` you must change the file ```template.env.txt``` to ```.env``` as well as add your own keys to the .env for this to work.
+
 ## Sample Usage
 Please reference ```main.py``` to see a sample execution
 
+## Sample Output
+Below is an image that shows what would be tweeted in this guide:
 ![First Tweet](First_Tweet.png)
