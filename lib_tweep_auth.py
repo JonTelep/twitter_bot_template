@@ -1,6 +1,6 @@
 # ================================================================
 # File Name: lib_tweepy_auth.py
-# Created by: Telep IO
+# Created by: Telep IO https://www.telep.io/
 # Date: 2/7/2022
 # 
 # Prerequisites
