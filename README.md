@@ -1,3 +1,5 @@
+# Note there is different branches with different integrations. Chose which one you wish to use as template
+
 # twitter_bot_template
 This Repository will house all code and frameworks around creating a simple Twitter Bot
 
