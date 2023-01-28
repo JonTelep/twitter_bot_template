@@ -1,3 +1,15 @@
+# ================================================================
+# File Name: main.py
+# Created by: Telep IO https://www.telep.io/
+# Date: 1/28/2023
+# 
+# Prerequisites
+# 1. Install necessary libraries found in the README.md 
+# 2. Apply for twitter API access: https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
+# 3. Generate necessary tokens found in Alter template.env.txt
+# 4. Enter your newly generated tokens into the .env file
+# 5. Send your first tweet!
+# ================================================================
 import os
 import sys
 
@@ -16,7 +28,6 @@ tweepy_create_object = lib_tweepy(tweet_content, "DONOTREPLY","123")
 
 # Executing Create Tweet function storing the tweet id from the response
 tweet_id = lib_tweepy.Create_Tweet(tweepy_create_object)
-
 
 reply_tweet_content = "This is your first reply to your own tweet!"
 tweepy_reply_object = lib_tweepy(reply_tweet_content, tweet_id, "123")
