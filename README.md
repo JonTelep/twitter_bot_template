@@ -6,13 +6,17 @@ This template can be used to get a quick twitter bot up and running. Utilizes ``
 ## Installations
 Below will show all necessary installations needed to run
 #### tweepy (Required)
-```$pip install tweepy```
+```pip install tweepy```
 Used to reference the python library for easy Twitter API Auth and function calling. Tweepy utilizes python's Request library to make the calls.
 
 ### python-decouple (Required)
-```$pip install python-decouple```
+```pip install python-decouple```
 Used to reference API keys from the .env file. ```.env``` can be altered to get your own .env file up and running!
 `NOTE` you must change the file ```template.env.txt``` to ```.env``` as well as add your own keys to the .env for this to work.
+
+### openai (chatgpt)
+```pip install openai```
+Used to reference API KEYS from the .env file for chatGPT in this example
 
 ## Sample Usage
 Please reference ```main.py``` to see a sample execution
