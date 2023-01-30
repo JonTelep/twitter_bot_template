@@ -14,14 +14,16 @@
 import os
 import sys
 
-# Below adds the Twitter_Bots/Libraries/ directory as a sys path giving the ability to reference the libraries.
-lib_tweepy = os.path.dirname(os.path.realpath("lib_tweepy.py"))
+# Below adds the ~/Twitter/ directory as a sys path giving the ability to reference the libraries.
+lib_tweepy = os.path.dirname(os.path.realpath("lib_tweepy.py")) + '/Twitter'
 sys.path.append(lib_tweepy)
 
+# Below adds the ~/Openai/ directory as a sys path giving the ability to reference the libraries.
+lib_openai = os.path.dirname(os.path.realpath("lib_openai.py")) + '/Openai'
+sys.path.append(lib_openai)
+
 from lib_tweepy import lib_tweepy
-from lib_openai import chatGPT_Request
-
-
+from Openai.lib_openai import chatGPT_Request
 
 # Storing chatGPT's response of the defaulted prompt
 chatgpt_response = chatGPT_Request("Tell me a joke about the Ethereum blockchain.")
