@@ -36,7 +36,7 @@ def divide_text(text):
     return chunks
 
 # Storing chatGPT's response of the defaulted prompt
-chatgpt_response = chatGPT_Request("Tell me the current price of Doge Coin.")
+chatgpt_response = chatGPT_Request("Tell me a joke about twitter bots.")
 divided_response = divide_text(chatgpt_response)
 
 # Index tracker to keep track of tweet ids and accurately tweet a reply if chatGPT response is longer than 280 characters

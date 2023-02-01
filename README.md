@@ -24,3 +24,14 @@ Please reference ```main.py``` to see a sample execution
 ## Sample Output
 Below is an image that shows what would be tweeted in this guide:
 ![First Tweet](First_Tweet.png)
+
+# Automation via cron job
+To automate a python file to execute on a schedule you can use the cron job.
+Open a terminal and run ```crontab -e``` to open the crontab file. You then have to set a schedule which can be easily done using https://cron-ai.vercel.app/
+
+You would need to add the schedule followed by `<cron schedule> python3 <file and path to run on>`
+## Example running every hour
+```0 * * * * python3 /home/jtelep/Documents/Projects/twitter_bot_template/main.py```
+
+## To stop the execution
+Simple reopen the crontab ```crontab -e``` and remove the line you entered and save the file!
