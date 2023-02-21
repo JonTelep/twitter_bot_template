@@ -23,6 +23,7 @@ sys.path.append(lib_openai)
 
 from lib_tweepy import lib_tweepy
 from lib_openai import chatGPT_Request
+from randomize_prompts import give_me_a_prompt
 
 # This helper function will divide text into sections of 280 characters to abide by Twitter's 280 character tweet limit
 def divide_text(text):
@@ -36,7 +37,7 @@ def divide_text(text):
     return chunks
 
 # Storing chatGPT's response of the defaulted prompt
-chatgpt_response = chatGPT_Request("Tell me a joke about twitter bots.")
+chatgpt_response = chatGPT_Request(give_me_a_prompt())
 divided_response = divide_text(chatgpt_response)
 
 # Index tracker to keep track of tweet ids and accurately tweet a reply if chatGPT response is longer than 280 characters
